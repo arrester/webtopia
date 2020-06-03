@@ -1,2 +1,3 @@
 User-agent: *
 Allow:/
+Sitemap: https://webtopia.site/sitemap.xml
