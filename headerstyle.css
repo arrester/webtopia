@@ -1,0 +1,9 @@
+        @keyframes bomb {
+              from { font-size: 500%; }
+              to { font-size: 300%; }
+           }
+        h1 {
+            animation-name: bomb;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }

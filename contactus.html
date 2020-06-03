@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>웹토피아에 오신 것을 환영합니다.</title>
+    <meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="common.css">
+<link rel="stylesheet" type="text/css" href="menu.css">
+<link rel="stylesheet" type="text/css" href="headerstyle.css">
+    <style>
+        input[type=text] { /* <input type="text"> 창에만 적용 */
+            color: blue;
+        }
+    input:hover, textarea:hover { /* 마우스 올라 올 때 */
+        background: aliceblue;
+    }
+    input[type=text]:focus, input[type=email]:focus { /* 포커스 받을 때 */
+        font-size: 120%
+    }
+    label {
+        display: block; /* 새 라인에서 시작 */
+        padding: 5px;
+    }
+    label span {
+        display: inline-block;
+        width: 90px;
+        text-align: right;
+        padding: 10px;
+    }
+    textarea {
+        margin: 0px;
+        width: 355px;
+        height: 184px;
+    }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <center>
+            <h1>
+                <a href="index.html"><span>웹토피아 추리력 테스트!</span></a>
+            </h1>
+        </center>
+        </div>
+        <center>
+        <div class='menu'>
+            <ul>  
+                <li><a href="index.html">HOME</a></li>                      
+                <li class='active sub'>
+                    <a href="#">게시판 및 실시간 채팅</a>
+                    <ul>
+                        <li class='sub'>
+                            <a href="notice.html">공지사항</a>
+                            <ul>
+                                <li>
+                                    <a href="#">서비스 오픈 예정</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class='last'>
+                            <a href="chat.html">실시간 채팅</a>
+                        </li>
+                        <li class='last'>
+                            <a href="#">서비스 오픈 예정</a>
+                        </ul>
+                        <li class='sub'>
+                            <a href="#">심리, IQ, 성격 테스트 (오픈 예정)</a>
+                            <ul>
+                                <li class='last'>
+                                    <a href="#">서비스 오픈 예정</a>
+                                </li>
+                                <li class='last'>
+                                    <a href="#">서비스 오픈 예정</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                </ul>
+            </ul>
+        </div>
+    </center>
+    <center>
+        <br>
+        <h2>CONTACT US</h2>
+        <hr>
+        <strong>추리력 테스트 문제 출제 또는 서비스 문의 받습니다.</strong>
+        <form action="mailto:arresterloyal@gmail.com" method="post" enctype="text/plain">
+            <label>
+                <span>Name</span><input type="text" placeholder="홍길동">
+            </label>
+            <label>
+                <span>Email</span><input type="email" placeholder="test@test.com">
+            </label>
+            <label>
+                <span>Comment</span><textarea placeholder="메시지를 남겨주세요"></textarea>
+            </label>
+            <label>
+                <input type="submit" value="보내기">
+                <input type="reset" value="초기화">
+            </label>
+        </form>
+    </center>
+    </body>
+</html>
